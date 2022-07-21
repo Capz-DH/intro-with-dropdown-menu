@@ -11,3 +11,8 @@ function companyDropdown() {
 
 }
 
+function mobileNavDropdown() {
+    document.getElementById("mobile-nav-menu-id").classList.toggle("mobile-nav-menu")
+
+}
+
