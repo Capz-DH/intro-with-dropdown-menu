@@ -8,9 +8,9 @@ body { background-color: var(--Almost-White);}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 .navbar {display: flex; align-items: center; justify-content: space-between;}
-.left-nav-icons { display: flex; align-items: center; justify-content: center; gap:3vw;}
+.left-nav-icons { display: flex; align-items: center; justify-content: center; gap:5px;}
 .left-nav-img {
-    margin-left: 3vw;
+    margin-left: 30px;
 }
 .left-nav-content {
     list-style-type: none; 
@@ -18,7 +18,7 @@ body { background-color: var(--Almost-White);}
     flex-direction: row; 
     align-items: center; 
     justify-content: center;
-    gap: 5vw;
+    gap: 40px;
     color: var(--Almost-Black);
 
 }
@@ -28,26 +28,69 @@ body { background-color: var(--Almost-White);}
     display: inline-block;
 
 }
+.dropdown-contents-container {
+    display: none;
+
+}
+#features {
+    cursor: pointer;
+} 
+
 
 .dropdown-content {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 2vh;
-  padding: 2vh 0;
+  align-items: left;
+  gap: 10px;
+  padding: 20px 20px;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 130px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color: var(--Almost-White);
+  min-width: 100px;
+  box-shadow: 0 0 16px 5px rgba(0,0,0,0.2);
   z-index: 1;
-  left: -4.5vw;
-  top: 3vh;
+  left: -45px;
+  top: 30px;
+  border-radius: 10px;
+}
+
+.company-dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+.company-dropdown-container {
+    display: none;
+
+}
+#company {
+    cursor: pointer;
+} 
+
+
+.company-dropdown-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 10px;
+  padding: 20px 12px;
+  position: absolute;
+  background-color: var(--Almost-White);
+  min-width: 80px;
+  box-shadow: 0 0 16px 5px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 30px;
+  border-radius: 10px;
 }
 
 a {
     text-decoration: none;
     color: var(--Almost-Black);
+    
+}
+#myDropdownContainer > a {
+    font-size: 18px;
 }
 .right-nav-icons{
     display: flex; align-items: center; justify-content: center; margin-right: 3vw;
@@ -85,8 +128,9 @@ a {
     display: flex; 
     align-items: center; 
     justify-content: center;
-    margin: 50px 130px;
+    margin: 150px 130px;
     gap: 10vw;
+    
 
 }
 .left-side-content {
@@ -127,11 +171,12 @@ h1 {
     background-color: var(--Almost-White);
     border: 1px solid var(--Almost-Black);
     color: var(--Almost-Black);
+    transition: all 0.05s ease;
 }
 
 .sponsor-logos {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     gap: 15px;
 }

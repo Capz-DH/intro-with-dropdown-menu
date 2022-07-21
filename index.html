@@ -15,17 +15,24 @@
   <div class="left-nav-icons">
     <img class="left-nav-img" src="images/logo.svg" alt="logo">
     <ul class="left-nav-content">
-        <li class="features-dropdown"><a onclick="" id="features">Features <img src="images/icon-arrow-down.svg"></a>
-          <div id="myDropdown" class="dropdown-content">
-          <a href="#">Todo</a>
-          <a href="#">Calendar</a>
-          <a href="#">Reminders</a>
-          <a href="#">Planning</a>
+        <li class="features-dropdown"><a onclick="featuresDropdown()" id="features">Features <img src="images/icon-arrow-down.svg"></a>
+          <div id="myDropdownContainer" class="dropdown-contents-container"><div id="myDropdown" class="dropdown-content">
+          <a href="#"><img src="images/icon-todo.svg">Todo</a>
+          <a href="#"><img src="images/icon-calendar.svg">Calendar</a>
+          <a href="#"><img src="images/icon-reminders.svg">Reminders</a>
+          <a href="#"><img src="images/icon-planning.svg">Planning</a>
+        </div>
         </div>
         </li>
-        <li>Company</li>
+        <li class="company-dropdown"><a onclick="companyDropdown()" id="company">Company <img src="images/icon-arrow-down.svg"></a>
+        <div id="companyDropdownContainer" class="company-dropdown-container"><div id="companyDropdown" class="company-dropdown-content">
+        <a href="#">History</a>
+        <a href="#">Our Team</a>
+        <a href="#">Blog</a>
         <li>Careers</li>
         <li>About</li>
+        </div>
+        </div>
     </ul>
   </div>
   <div class="right-nav-icons">
