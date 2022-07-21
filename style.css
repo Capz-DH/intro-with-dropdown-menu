@@ -1,6 +1,10 @@
 :root{
  font-family: 'Epilogue';
+ --Almost-White: hsl(0, 0%, 98%);
+ --Medium-Gray: hsl(0, 0%, 41%);
+ --Almost-Black: hsl(0, 0%, 8%);
 }
+body { background-color: var(--Almost-White);}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 .navbar {display: flex; align-items: center; justify-content: space-between;}
@@ -14,8 +18,36 @@
     flex-direction: row; 
     align-items: center; 
     justify-content: center;
-    gap: 5vw
+    gap: 5vw;
+    color: var(--Almost-Black);
 
+}
+
+.features-dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+.dropdown-content {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2vh;
+  padding: 2vh 0;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  left: -4.5vw;
+  top: 3vh;
+}
+
+a {
+    text-decoration: none;
+    color: var(--Almost-Black);
 }
 .right-nav-icons{
     display: flex; align-items: center; justify-content: center; margin-right: 3vw;
@@ -27,13 +59,26 @@
     flex-direction: row; 
     align-items: center; 
     justify-content: center;
-    gap: 5vw
+    gap: 5vw;
+    color: var(--Almost-Black);
 
 }
 #register {
-    border: solid 1px black;
+    border: solid 1px var(--Almost-Black);
     padding: 9px 22px;
     border-radius: 10px;
+    box-shadow: 0 5px 0 rgba(0, 0, 0, 0.8);
+}
+
+#register:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+#register:active {
+    transform: translateY(5px);
+    transition: all 0.1s ease;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 
 .content-container{ 
@@ -50,6 +95,7 @@
     align-items: left;
     justify-content: center;
     gap: 30px;
+
 }
 #desktop-hero {
     width: 40vw;
@@ -63,11 +109,29 @@ h1 {
     font-weight: 700;
     font-size: 4rem;
     margin: 0;
+    color: var(--Almost-Black);
 }
 #learn-more {
     width: 120px;
     padding: 9px 20px;
-    border: 0;
+    border: 1px solid var(--Almost-Black);
     border-radius: 10px;
+    background-color: var(--Almost-Black);
+    color: var(--Almost-White);
+}
 
+#learn-more:hover {
+    cursor: pointer;
+}
+#learn-more:active {
+    background-color: var(--Almost-White);
+    border: 1px solid var(--Almost-Black);
+    color: var(--Almost-Black);
+}
+
+.sponsor-logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
