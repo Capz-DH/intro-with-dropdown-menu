@@ -19,6 +19,7 @@ body { background-color: var(--Almost-White);}
 .left-nav-img {
     margin-left: 30px;
 }
+#close-menu {display:none;}
 #desktop-hero-mobile {display:none; z-index:-2;}
 #mobile-login {display:none; z-index:-2;}
 #mobile-register {display:none; z-index:-2;}
