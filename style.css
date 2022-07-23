@@ -140,6 +140,10 @@ a {
     box-shadow: 0 0 0 rgba(0, 0, 0, 0);
 }
 
+#login:hover {
+    cursor: pointer;
+}
+
 .content-container{ 
     display: flex; 
     align-items: center; 
@@ -441,5 +445,8 @@ h1 {
         top: 20px;
         right:20px;
         z-index: 1;
+    }
+    #close-menu:hover {
+        cursor: pointer;
     }
 }
